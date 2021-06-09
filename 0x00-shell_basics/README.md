@@ -1,0 +1,1 @@
+This script show where i am
