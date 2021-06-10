@@ -1,0 +1,1 @@
+We'll go to solve task 0x01. Shell permissions
