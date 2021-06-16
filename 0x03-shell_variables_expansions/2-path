@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH=/usr/java/</action Directory>/bin:$PATH
+echo $PATH"/action"
