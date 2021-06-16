@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($NUM \d\.\d{2})) 
+echo $NUM /\d\.\d{2}))/ 
