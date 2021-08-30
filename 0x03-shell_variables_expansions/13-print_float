@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $NUM /\d\.\d{2}))/ 
+printf "%0.2f\n" $NUM
