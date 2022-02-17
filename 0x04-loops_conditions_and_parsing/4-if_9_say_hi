@@ -3,13 +3,13 @@
 #in the 9th iteration display Hi.
 
 
-i=1
+i=0
 str="Best School"
-while [ $i -lt 11 ]; do
-if [ $i -ne 9 ]; then
-    echo "$str"
-else
+while [ $i -lt 10 ]; do
+if [ $i -eq 9 ]; then
+    
     echo "Hi"
 fi
+echo "$str"
 ((i=i+1))
 done
