@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script displsays Best School 10 times with until loop.
+
+
+i=0
+str="Best School"
+until [ $i -eq 10 ]; do
+echo "$str"
+i=$((i=i+1))
+done
