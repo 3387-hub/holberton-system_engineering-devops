@@ -2,5 +2,5 @@
 #This Bash script that displays
 #a list of currently running processes.
 
-cmd=$(ps aux u)
+cmd=$(ps -e u H)
 echo "$cmd"
