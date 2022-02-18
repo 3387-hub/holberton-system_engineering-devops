@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+#shellcheck disable=SC2009
+
+cmd=$(ps -e u -H )
+
+echo "$cmd" | grep "bash"
