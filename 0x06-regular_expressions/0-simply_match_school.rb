@@ -1,5 +1,2 @@
-#!/usr/bin/ruby
-#This ruby script accepts one argument and pass
-#it to a regular expression matching method.
-
+#!/usr/bin/env ruby
 puts ARGV[0].scan(/School/).join
