@@ -2,7 +2,7 @@
 # a Bash script that transfers a file from our client to a server
 argv=("$@")
 cmd=$(scp -i "${argv[0]}" -o StrictHostKeyChecking=no "${argv[2]}"@"${argv[1]}":~/)
-if ! [ $# -eq 4 ]; then
+if [ $# -ne 4 ]; then
     echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
 fi
 echo "$cmd"
