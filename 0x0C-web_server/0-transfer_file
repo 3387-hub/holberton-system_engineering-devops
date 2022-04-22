@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # a Bash script that transfers a file from our client to a server
 argv=("$@")
+cmd=$(scp -i "${argv[4]}" -o StrictHostKeyChecking=no "${argv[1]}" "${argv[3]}"@"${argv[2]}":~/)
 if [ $# -lt 4 ]; then
     echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
 fi
-scp -i "${argv[4]}" -o StrictHostKeyChecking=no "${argv[1]}" "${argv[3]}"@"${argv[2]}":~/
+echo "$cmd"
