@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # a Bash script that transfers a file from our client to a server
 argv=("$@")
-cmd=$(scp ${argv[0]} ${argv[2]}@${argv[1]}:~/)
+cmd=$(scp ${argv[0]} ${argv[2]}@${argv[1]}:~/ -o StrictHostKeyChecking=no)
 if [ $# -eq 4 ]; then
     echo "$cmd"
 else
