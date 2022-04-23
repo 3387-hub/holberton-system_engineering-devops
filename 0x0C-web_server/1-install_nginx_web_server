@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 sudo apt-get -y install nginx
+echo Hello World > /usr/share/nginx/html/index.html
 sudo service nginx restart
