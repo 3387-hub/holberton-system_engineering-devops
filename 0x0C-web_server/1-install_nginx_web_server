@@ -2,4 +2,4 @@
 #bash script that install and configure the nginx web server.
 apt-get -y install nginx
 echo Hello World > /usr/share/nginx/html/index.html
-sudo service nginx restart
+service nginx restart
