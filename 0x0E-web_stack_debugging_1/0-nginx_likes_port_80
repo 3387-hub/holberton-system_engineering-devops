@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#Nginx likes port 80 
-sed -i 's/listen \[\:\:\]:80 default_server ipv6only\=on;/listen [::]1:80 default_server ipv6only=on;/' /etc/nginx/sites-enabled/default 
-service nginx restart
+# Script that configures an Nginx server so that it listens to the port 80
+sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
+sudo service nginx restart
