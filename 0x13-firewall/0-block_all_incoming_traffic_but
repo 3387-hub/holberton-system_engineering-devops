@@ -6,3 +6,4 @@ sudo ufw default allow outgoin
 sudo ufw allow OpenSSH
 sudo ufw allow https
 sudo ufw allow http
+sudo ufw enable
