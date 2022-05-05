@@ -1,4 +1,3 @@
- executable file 6 lines (6 sloc) 259 Bytes
 #!/usr/bin/env bash
 # Run nginx as nginx user and add listening on port 8080
 chmod 777 /etc/nginx/nginx.conf
