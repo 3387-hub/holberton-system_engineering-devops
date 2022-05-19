@@ -10,10 +10,8 @@ from sys import argv
 
 if __name__ == "__main__":
 
-    cookies = {"sessioncookie": "1233456789"}
     user_r = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                           .format(argv[1])).json()
-
     all_r = requests.get("https://jsonplaceholder.typicode.com/todos").json()
 
     total_task = 0
