@@ -19,7 +19,7 @@ if __name__ == "__main__":
     total_task = 0
     done_task = 0
     tasks = []
-    
+
     for i in all_r:
         if i["userId"] == user_r["id"]:
             total_task += 1
