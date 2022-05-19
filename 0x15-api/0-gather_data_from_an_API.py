@@ -24,6 +24,6 @@ if __name__ == "__main__":
             if i["completed"] is True:
                 tasks.append("\t" + i["title"])
                 done_task += 1
-    print("Employee {} id done with task({}/{}):"
+    print("Employee {} is done with task({}/{}):"
           .format(user_r['name'], done_task, total_task))
     print('\n'.join(tasks))
