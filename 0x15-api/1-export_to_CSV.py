@@ -27,7 +27,7 @@ if __name__ == "__main__":
                 done_task = True
             else:
                 done_task = False
-            tasks.append([user_r['id'], user_r['name'],
+            tasks.append([user_r['id'], user_r['username'],
                          done_task, i['title']])
 
     with open("{}.csv".format(user_r["id"]), "wt", encoding="UTF8") as file:
