@@ -22,7 +22,7 @@ if __name__ == "__main__":
         if i["userId"] == user_r["id"]:
             total_task += 1
             if i["completed"] is True:
-                tasks.append("\t" + i["title"])
+                tasks.append("\t"+ " " + i["title"])
                 done_task += 1
     print("Employee {} is done with tasks({}/{}):"
           .format(user_r['name'], done_task, total_task))
